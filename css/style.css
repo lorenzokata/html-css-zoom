@@ -13,7 +13,7 @@ header{
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    height: 100px;
+    height: 80px;
     width: 100%;
 }
 
@@ -26,32 +26,83 @@ header{
     border-radius: 10px;
 }
 
+
+/* MAIN */
+
 main{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 10px;
+    align-content: flex-start;
+    overflow: auto;
+    padding: 10px 10px;
+    height: calc(100vh - 180px);
+    background-color:black;
+}
+
+main .user{
+    flex-shrink: 0;
+    position: relative;
+    border: 2px solid black;
+    width: 250px;
 }
 
 main img{
-    position: relative;
-    border: 2px solid black;
-    width: calc(100% / 6);
+    width: 100%;
 }
 
-main div{
+main .user > div{
     position: absolute;
-    left: ;
+    left: 0;
+    bottom: 0;
+    padding: 8px 8px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
+/* FOOTER */
 
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color:#222222;
+    color: white;
+}
 
+footer > div{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
 
+footer .left{
+    padding: 10px 10px;
+}
 
+footer .center{
+    padding: 10px 10px;
+}
 
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+}
 
+.icone{
+    font-size: 40px;
+}
 
+.item span{
+    font-size: 18px;
+}
 
-
+.freccia{
+    align-self: flex-end;
+}
 
 
 
@@ -60,4 +111,7 @@ main div{
 
 .debug header{
     background-color:black;
+}
+.debug .item{
+    font-size: 22px;
 }
