@@ -4,3 +4,60 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+
+body{
+    
+}
+
+header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 100px;
+    width: 100%;
+}
+
+.btn-header{
+    display: inline-block;
+    background-color: #4a4a4a;
+    padding: 10px 10px;
+    color: white;
+    margin: 10px 10px 0 0;
+    border-radius: 10px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+main img{
+    position: relative;
+    border: 2px solid black;
+    width: calc(100% / 6);
+}
+
+main div{
+    position: absolute;
+    left: ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.debug header{
+    background-color:black;
+}
