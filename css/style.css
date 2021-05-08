@@ -6,7 +6,7 @@
 }
 
 body{
-    
+    background-color: black;
 }
 
 header{
@@ -32,10 +32,11 @@ header{
 main{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-content: flex-start;
     overflow: auto;
     padding: 10px 10px;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 170px);
     background-color:black;
 }
 
@@ -43,7 +44,7 @@ main .user{
     flex-shrink: 0;
     position: relative;
     border: 2px solid black;
-    width: 250px;
+    width: calc(100% / 6);
 }
 
 main img{
@@ -64,25 +65,22 @@ main .user > div{
 footer{
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 90px;
     background-color:#222222;
     color: white;
 }
 
+
+/* left, center, right */
 footer > div{
     display: flex;
     justify-content: space-between;
     height: 100%;
+    padding: 10px 15px;
 }
 
-footer .left{
-    padding: 10px 10px;
-}
 
-footer .center{
-    padding: 10px 10px;
-}
-
+/* item */
 .item{
     display: flex;
     flex-wrap: wrap;
@@ -90,28 +88,50 @@ footer .center{
     justify-content: space-around;
     align-items: center;
     align-content: flex-start;
+    padding: 4px 15px;
+}
+
+.item a:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.item .freccia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
 }
 
 .icone{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .item span{
-    font-size: 18px;
+    display: block;
+    font-size: 14px;
 }
 
-.freccia{
-    align-self: flex-end;
+.fa-share-square{
+    color: #4bc800;
 }
 
-
-
-
-
-
-.debug header{
-    background-color:black;
+.right{
+    justify-content: center;
+    align-items: center;
+    background-color: #4a4a4a;
 }
-.debug .item{
-    font-size: 22px;
+
+.right a{
+    color: red;
 }
