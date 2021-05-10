@@ -88,14 +88,15 @@ footer > div{
     justify-content: space-around;
     align-items: center;
     align-content: flex-start;
-    padding: 4px 15px;
+    padding: 4px 20px;
 }
 
 .item a:first-child{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    height: 100%;
 }
 
 .item:hover{
@@ -107,6 +108,7 @@ footer > div{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 footer a{
